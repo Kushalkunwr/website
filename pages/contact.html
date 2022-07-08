@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+		<!-- Linking to fontawesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Linking external CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!-- Providing internal CSS -->
+		<style type="text/css">
+			/*Providing CSS for class col1*/
+			.col1{
+				float: left;	
+			}
+				.col1 form input{
+					border-radius: 5px;
+					height: 30px;
+				}
+		</style>
+
+</head>
+<body class="body_background">
+<!-- Body section consists of three parts header, main and footer --> 	
+
+	<!-- Creating a wrapper -->
+	<div class="wrapper">
+		<!-- Providing header tag -->
+		<header>
+			<!-- Creating a navigation bar -->
+			<nav class="nav">
+				<ul>
+					<li  style="color: #000; background-color: white; padding-left: none;"><h2 style="font-color:black; ">PORT<span style="font-family: sans-serif;">FOL</span>IO</h2></li>
+					<!--Setting time using js-->
+					<li id="time" style="color: black;background: none ;"></li>
+					
+				</ul><!--Linking page to other pages-->
+				<ul style="padding-left: 33%">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="My CV.html">My CV</a></li>
+					<li><a href="Blog.html">Blog</a></li>
+					<li><a href="Research.html">Reasearch</a></li>
+					<li><a href="Contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<br><br>
+		</header>
+		<!-- Allocating space for adding main content -->
+		<main class="main">
+			<div class="col1">
+				<h2 style="text-align:center;padding-top: 80px; ">CONTACT US</h2>
+				<img src="../pictures/here.jpg" style="width: 550px; height:500px; padding-left:100px;padding-top: 80px ;">
+			</div>
+			<div class="col1">
+				<h1 style="text-align: center;padding-top: 80px">Input your Information Here</h1>
+				<!--Using Input tags to get inputs-->
+				<form style="padding-top: 100px; padding-left: 150px;" name="messageForm" onsubmit="validateForm()">
+					<input type="text" name="fname" placeholder ="First name">
+					<input type="text" name="mname" placeholder ="Middle name">
+					<input type="text" name="lname" placeholder ="Last name">
+					<br>
+					<br>
+					<input type="email" name="email" placeholder ="E-mail address" style="width: 300px;">
+					<br>
+					<br>
+					<input type="phone" name="phone" placeholder ="Phone Number" style="width: 300px;">
+					<br><br>
+					<h1>Message Area</h1><br>
+					<textarea rows="18" cols="50" name="message" placeholder="Write message here" style="border-radius: 5px;"></textarea>
+					<br>
+					<input type="submit" cols="2" value="Submit" >
+				</form>
+				
+				<script>
+					/*writing internal javascript for from validation*/
+					function validateForm() {
+						var fname = document.forms["messageForm"]["fname"].value;
+						var lname = document.forms["messageForm"]["fname"].value;
+						var email = document.forms["messageForm"]["email"].value;
+						var ph = document.forms["messageForm"]["phone"].value;
+						var message = document.forms["messageForm"]["message"].value;
+
+						if (fname == "" || lname == "" || ph == "" || email == "" || message == ""){
+							alert("Empty fields found. Please recheck the form.");
+						}
+						else {
+							alert("Thank you for contacting we will reach you soon.");
+						}
+					}
+				</script>
+
+			</div>
+		</main>
+		<br>
+		<!-- Providing buttons to turn into dark modes and white modes -->
+		<button style="background: none;" type="button" onclick="myFunction()">Dark Mode</button>
+	
+		<button style="background: none;" type="button" onclick="myFunction1()">white Mode</button>
+		<!-- Providing the footer content -->
+		<footer >
+			<div style="text-align: left; padding: 10px; ">&copy: Copyright Reserved
+			<a style="float: right ;padding-left: 5px;"href="#" class="fa fa-instagram"></a>	
+			<a style="float: right ;padding-left: 5px;"href="#" class="fa fa-facebook"></a>
+			<a style="float: right;" href="#" class="fa fa-twitter"></a>
+			<div style="float: right;">Visit us on:</div>	
+			</div>
+		</footer>
+	</div>
+	<!--Linking to external javascript-->
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

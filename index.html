@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<!-- Linking to fontawesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Linking external CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Providing internal CSS -->
+		<style type="text/css">
+			.head{ 
+				/*Providing CSS to class head*/
+				background-image: url(pictures/head.jpg) ;
+				width: 100%;
+				height: 700px;
+				background-size: 100% 100%;
+				margin: 5px;
+				background-color: #2A70EF;
+				padding-top: 5px;
+			}
+			/*Providing CSS to class column*/
+			.column {
+				float: left;
+				width: 300px;
+				padding: 5px;
+
+			}
+				.column p{
+					padding-top: 40px;
+				}
+
+			/*Providing CSS to class row*/
+			.row{
+				width: 100%;
+				height:300px;
+				padding-top: 50px;
+			}
+				.row img{
+					width:350px;
+					height:300px;
+					border-radius:10px ;
+				}
+
+		</style>
+		
+
+
+	</head>
+	<body class="body_background">
+	<!-- Body section consists of three parts header, main and footer -->	
+
+		<!-- Creating a wrapper -->
+		<div class="wrapper">
+			
+			<header>
+				<!-- Creating a navigation bar -->
+				<nav class="nav">
+					
+					<ul>
+						<li  style="color: #000; background-color: white; padding-left: none;"><h2 style="font-color:black; ">PORT<span style="font-family: sans-serif;">FOL</span>IO</h2></li>
+						<!--Setting time using js-->
+						<li id="time" style="color: black;background: none ;"></li>
+					</ul>
+					<!--Linking page to other pages-->
+					<ul style="padding-left: 33%">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pages/My CV.html">My CV</a></li>
+						<li><a href="pages/Blog.html">Blog</a></li>
+						<li><a href="pages/Research.html">Research</a></li>
+						<li><a href="pages/Contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+				
+				<div class="head">
+					
+					<h1 style="text-align: left; padding-top: 15%">Welcome To My Webpage <br> <br>Stay home Stay safe <br>Let Us Take You Online</h1>
+				</div>
+			</header>
+			<!-- Allocating space for adding main content -->
+			<main class="main" >
+				<div>
+				<!--Creating section to describe other pages-->		
+					<div class="row">
+						<div class="column">
+						 	<img src="pictures/img1.jpg" alt="image">
+						</div>
+						<div class="column" style="float:right; ">
+						    <p><b>Blogs</b><br>Blog contains online journels written by me.I am a IT student we desl with technologies. Most of the aspects os the blog are tech related.<a href="pages/Blog.html">Find More.</a></p>
+						</div> 
+						<div class="column" style="float: none; ">
+						    <p><b>My CV</b><br>My CV contains a short introduction about me.It includes all my contact information.all my basic qualification and my experience are also in CV.<a href="pages/My CV.html">Find More.</a></p>
+						</div> 
+					</div>
+					<br> <br> <br>
+					<div class="row" >
+						<div class="column">
+						 	<img src="pictures/img2.jpg" alt="image" >
+						</div>
+						<div class="column" style="float:right; ">
+							<p><b>Contact Us</b><br>If you have anything you want us to deal with or want to provide any information or feedback feel free to contact us.<a href="pages/Contact.html">Find More.</a></p>
+						   
+						</div> 
+						<div class="column" style="float: none; ">
+						     <p><b>Research</b><br>Research contains the research that have been conducted for the completion. It contains comparision of this website with another <a href="pages/Research.html">Find More.</a></p>
+						</div> 
+					</div>
+				</div>
+			</main>
+			
+			<br>
+			<!-- Providing buttons to turn into dark modes and white modes -->
+			<button style="background: none;" type="button" onclick="myFunction()">Dark Mode</button>
+			<button style="background: none;" type="button" onclick="myFunction1()">white Mode</button>
+
+			<!-- Providing the footer content -->
+			<footer >
+				<div style="text-align: left; padding: 10px; ">&copy: Copyright Reserved
+				<a style="float: right ;padding-left: 5px;"href="#" class="fa fa-instagram"></a>	
+				<a style="float: right ;padding-left: 5px;"href="#" class="fa fa-facebook"></a>
+				<a style="float: right;" href="#" class="fa fa-twitter"></a>
+				<div style="float: right;">Visit us on:</div>	
+				</div>
+				
+			</footer>
+		</div>
+		<!--Linking to external javascript-->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
